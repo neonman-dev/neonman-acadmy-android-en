@@ -1,0 +1,6 @@
+{
+  "name": "Neonman Academy",
+  "description": "MCP-based education platform featuring courses, tests, flashcard and matching games, presentations, books, schedules, and AI drawing board.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
