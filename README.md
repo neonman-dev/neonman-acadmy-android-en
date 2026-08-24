@@ -9,7 +9,7 @@
 
 You can download and test the MVP version of the application via the direct link below:
 
-* 📥 **[Download Neonman Academy APK (v1.0.0-mvp)]([[https://github.com/neonman-dev/neonman-academy-android/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.apk](https://github.com/neonman-dev/neonman-acadmy-android-en/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.English.apk)](https://github.com/neonman-dev/neonman-acadmy-android-en/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.English.apk))**
+* 📥 **[Download Neonman Academy APK (v1.0.0-mvp)]([https://github.com/neonman-dev/neonman-academy-android/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.apk](https://github.com/neonman-dev/neonman-acadmy-android-en/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.English.apk)](https://github.com/neonman-dev/neonman-acadmy-android-en/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.English.apk )**
 * 📦 **[All Releases Page (GitHub Releases)](https://github.com/neonman-dev/neonman-academy-android/releases)**
 
 ---
