@@ -1,110 +1,123 @@
-# Neonman Academy — Ta'lim Platformasi Android Ilovasi
+# Neonman Academy — Educational Platform Android Application
+> Official MVP version submitted for the **President AI Award** competition.
 
-**Neonman Academy** — bu zamonaviy Kotlin va Jetpack Compose texnologiyalarida yaratilgan interaktiv ta'lim platformasining rasmiy Android ilovasi. Ilova o'quvchilarga kurslarni o'rganish, testlar topshirish, ta'limiy o'yinlar o'ynash, dars jadvalini yuritish va AI chizmachilik doskasidan foydalanish imkoniyatini beradi.
-
----
-
-## 📱 Paket va Loyiha Ma'lumotlari
-
-* **Paket nomi (Application ID):** `uz.neonman.academy`
-* **Arxitektura:** Clean MVVM (Model-View-ViewModel) + Single Activity (Compose Navigation)
-* **Dasturlash tili:** Kotlin 100%
-* **UI karkasi:** Jetpack Compose (Material 3)
-* **Minimal Android versiyasi:** Android 8.0 (API 26)
-* **Maqsadli Android versiyasi:** Android 15 (API 36)
+**Neonman Academy** is the official Android app for an interactive learning platform built using modern Kotlin and Jetpack Compose technologies. The app enables students to take courses, complete quizzes, play educational games, manage class schedules, and utilize an AI drawing board.
 
 ---
 
-## ✨ Asosiy Imkoniyatlar va Bo'limlar
+## 📲 MVP & Download (Release)
 
-### 1. 🔐 Avtorizatsiya va Profil (Auth)
-* **Demo Kirish:** Platformani tezkor ko'rib chiqish uchun sinov rejimida kirish.
-* **Telegram WebApp Integratsiyasi:** Telegram `initData` orqali xavfsiz va bir bosqichli avtorizatsiya.
-* **Profil to'ldirish va tahrirlash:** Ism, familiya va tug'ilgan sanani o'zgartirish.
+You can download and test the MVP version of the application via the direct link below:
 
-### 2. 📚 Kurslar va Darslar (Courses & Lessons)
-* **Interaktiv Kurslar:** Darslar ro'yxatini ko'rish, tavsifi va dars materiallari bilan tanishish.
-* **Test va Topshiriqlar:** Dars yakunida test topshirish va natijalarni avtomatik hisoblash.
-* **Kurs Yaratish:** O'qituvchilar uchun yangi kurs va darslarni qo'lda yaratish imkoniyati.
-
-### 3. 🛠 Platforma Imkoniyatlari (Extras Features)
-* **📖 Kitoblar (Books):** O'quv va badiiy kitoblar kutubxonasi, mutolaa paneli.
-* **✍️ Testlar (Tests):** Fanlar bo'yicha mustaqil bilimni sinash testlari.
-* **🎮 O'yinlar (Educational Games):** Mantiqiy va ta'limiy interaktiv mini-o'yinlar.
-* **📊 Taqdimotlar (Presentations):** Dars slaydlar va taqdimot materiallarini ko'rish.
-* **📅 Dars Jadvali (Schedule):** Kunlar bo'yicha dars va topshiriqlar jadvalini tuzish, vaqt va izohlarni saqlash.
-* **🔖 Saqlanganlar (Saved Items):** Sevimli va kerakli dars materiallarini bitta joyga saqlash.
-* **🎨 AI Doska (Interactive Canvas Board):** Interaktiv chizmachilik doskasi — g'oyalar, formula va chizmalarni saqlab borish.
-
-### 4. 🎨 Mavzular va Dizayn (Themes)
-* **Neon Dark Mode:** Kiberpank uslubidagi neom-yashil va to'q rangli interfeys.
-* **Light Sketch Mode:** Yorug', toza va qalam eskiz uslubidagi klassik ko'rinish.
+* 📥 **[Download Neonman Academy APK (v1.0.0-mvp)](https://github.com/neonman-dev/neonman-academy-android/releases/download/v1.0.0-mvp/Neonman.Academy.1.0.apk)**
+* 📦 **[All Releases Page (GitHub Releases)](https://github.com/neonman-dev/neonman-academy-android/releases)**
 
 ---
 
-## 🏗 Loyiha Strukturasi (Project Architecture)
+## 📱 Package & Project Details
+
+* **Package Name (Application ID):** `uz.neonman.academy`
+* **Architecture:** Clean MVVM (Model-View-ViewModel) + Single Activity (Compose Navigation)
+* **Programming Language:** Kotlin 100%
+* **UI Framework:** Jetpack Compose (Material 3)
+* **Minimum Android Version:** Android 8.0 (API 26)
+* **Target Android Version:** Android 15 (API 36)
+
+---
+
+## ✨ Key Features & Modules
+
+### 1. 🔐 Authorization & Profile (Auth)
+* **Demo Login:** Guest mode to quickly explore the platform.
+* **Telegram WebApp Integration:** Secure, one-step authentication via Telegram `initData`.
+* **Profile Setup & Editing:** Update name, surname, and date of birth.
+
+### 2. 📚 Courses & Lessons
+* **Interactive Courses:** Browse lesson lists, read descriptions, and access study materials.
+* **Quizzes & Assignments:** Take quizzes at the end of lessons with automatic grading.
+* **Course Creation:** Ability for teachers to manually create new courses and lessons.
+
+### 3. 🛠 Extra Platform Features
+* **📖 Books:** Library of educational and fiction books with a reading interface.
+* **✍️ Quizzes & Tests:** Subject-specific self-assessment tests.
+* **🎮 Educational Games:** Interactive logic and educational mini-games.
+* **📊 Presentations:** View lesson slides and presentation materials.
+* **📅 Schedule:** Organize daily class schedules, set timings, and save notes.
+* **🔖 Saved Items:** Bookmarks to keep essential study materials in one place.
+* **🎨 AI Board (Interactive Canvas):** Interactive drawing canvas to sketch ideas, formulas, and diagrams.
+
+### 4. 🎨 Themes & Design
+* **Neon Dark Mode:** Cyberpunk-style dark interface with glowing neon-green accents.
+* **Light Sketch Mode:** Clean, bright classic look styled after paper pencil sketches.
+
+---
+
+## 🏗 Project Architecture
 
 ```text
 app/src/main/java/com/example/
 ├── data/
-│   ├── api/             # Retrofit API servislari, modellari va HTTP so'rovlar
-│   ├── datastore/       # UserPreferences (Token va sozlamalarni saqlash)
-│   └── repository/      # Ma'lumotlar ombori va resurslar bilan ishlash
+│   ├── api/            # Retrofit API services, models, and HTTP requests
+│   ├── datastore/      # UserPreferences (Token and settings storage)
+│   └── repository/     # Repositories for data handling and resources
 ├── ui/
-│   ├── components/      # Qayta ishlatiluvchi UI komponentlar (BottomNav, Card, Input)
-│   ├── screens/         # Ilova ekranlari (Home, Courses, Auth, Board, Games, ...)
-│   ├── theme/           # Material 3 ranglar palitrasi, shriftlar va mavzular
-│   └── viewmodels/      # MVVM ViewModel va StateFlow holatlari
-└── MainActivity.kt      # Asosiy ishga tushirish faoliyati va ekranlar navigatsiyasi
+│   ├── components/     # Reusable UI components (BottomNav, Card, Input)
+│   ├── screens/        # App screens (Home, Courses, Auth, Board, Games, ...)
+│   ├── theme/          # Material 3 color palettes, typography, and themes
+│   └── viewmodels/     # MVVM ViewModels and StateFlow states
+└── MainActivity.kt      # Main entry activity and screen navigation
 ```
 
 ---
 
-## 🚀 Ishga Tushirish va Yig'ish (Setup & Build)
+## 🚀 Setup & Build
 
-### Talab qilinadigan muhit:
-* **Android Studio:** Ladybug (2024.2.1) yoki undan yangi versiya
-* **JDK:** Java 17 yoki JDK 21
-* **Gradle:** Gradle Wrapper (8.x +)
+### Requirements:
+* **Android Studio:** Ladybug (2024.2.1) or newer
+* **JDK:** Java 17 or JDK 21
+* **Gradle:** Gradle Wrapper (8.x+)
 
-### Loyihani sozlash va ishga tushirish:
+### Project Setup:
 
-1. **Repozitoriyani klon qiling yoki zip formatida yuklab oling.**
-2. **Android Studio** dasturida loyihani oching.
-3. Gradle bog'liqliklari avtomatik sinxronlanishini kuting (`Sync Project with Gradle Files`).
-4. **.env** yoki backend server manzillarini sozlang:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/neonman-dev/neonman-academy-android.git
+   ```
+2. Open the project in **Android Studio**.
+3. Wait for Gradle dependencies to sync (`Sync Project with Gradle Files`).
+4. Configure **.env** or backend server URLs:
    ```properties
    BASE_URL=https://your-api-domain.com/
    ```
-5. Qurilma (Emulator yoki real Android telefon) ni ulang va `Run` (Shift + F10) tugmasini bosing.
+5. Connect a device (Emulator or physical Android phone) and click `Run` (Shift + F10).
 
 ---
 
-## 📦 APK va AAB Fayl Yaratish (Release Build)
+## 📦 Building APK & AAB (Release)
 
-Android Studio buyruqlar satri orqali release APK yig'ish uchun:
+To build a release APK via CLI:
 
 ```bash
 ./gradlew assembleRelease
 ```
 
-Google Play Store uchun Android App Bundle (AAB) yig'ish uchun:
+To build an Android App Bundle (AAB) for Google Play Store:
 
 ```bash
 ./gradlew bundleRelease
 ```
 
-Tayyor tayyorlangan fayllar ushbu katalogda joylashadi:
-`app/build/outputs/apk/release/` hamda `app/build/outputs/bundle/release/`
+Built artifacts will be located in:
+`app/build/outputs/apk/release/` and `app/build/outputs/bundle/release/`
 
 ---
 
-## 🔒 Xavfsizlik va Maxfiylik
+## 🔒 Security & Privacy
 
-* Barcha authorization tokenlar Android `DataStore` tizimida xavfsiz saqlanadi.
-* Server bilan ma'lumot almashinuvi HTTPS shifrlangan tarmoq orqali amalga oshiriladi.
-* Maxfiy kalitlar va server URL manzillari `BuildConfig` va `.env` fayllari orqali boshqariladi.
+* All authorization tokens are securely stored using Android `DataStore`.
+* Server communications use encrypted HTTPS connections.
+* Secret keys and server URLs are managed via `BuildConfig` and `.env` files.
 
 ---
 
-© 2026 **Neonman Academy**. Barcha huquqlar himoyalangan.
+© 2026 **NeonmanDev**. All rights reserved.
